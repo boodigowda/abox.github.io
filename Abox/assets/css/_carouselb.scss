@@ -1,0 +1,26 @@
+@mixin arr {
+  background-color: rgba(26, 3, 3, 0.829);
+  height: 30px;
+  &:hover {
+    box-shadow: 1px 0px 12px 3px rgb(155, 153, 153);
+  }
+}
+
+.carouselExampleControls6 {
+  .carousel-control-prev {
+    position: absolute;
+    top: 210px;
+    left: 25%;
+    .carousel-control-prev-icon {
+      @include arr();
+    }
+  }
+  .carousel-control-next {
+    position: absolute;
+    top: 210px;
+    right: 25%;
+    .carousel-control-next-icon {
+      @include arr();
+    }
+  }
+}

@@ -1,0 +1,55 @@
+body {
+  background-color: aliceblue;
+  header {
+    .top {
+      background-color: rgb(47, 47, 51);
+      .navbar {
+        padding: 15px 12px;
+        .navbar-brand {
+          img {
+            width: 50px;
+          }
+        }
+        .collapse {
+          .navbar-toggler {
+            .navbar-toggler-icon {
+              background-color: white;
+            }
+          }
+          .navbar-nav {
+            .nav-item {
+              padding: 0px 10px;
+              a {
+                color: white;
+                font-weight: 490;
+                &:hover {
+                  color: black;
+                  background-color: white;
+                  border-radius: 10%;
+                  font-weight: 500;
+                  box-shadow: 1px 0px 12px 3px white;
+                }
+              }
+            }
+            .dropdown {
+              .dropdown-menu {
+                background-color: rgb(255, 255, 255);
+              }
+            }
+          }
+          form {
+            a {
+              padding: 0px 5px;
+              &:hover {
+                box-shadow: 1px 0px 12px 3px rgb(155, 153, 153);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+main {
+  margin-top: 7.5%;
+}

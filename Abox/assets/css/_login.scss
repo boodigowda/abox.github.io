@@ -1,0 +1,14 @@
+.log_in {
+  border: 1px solid black;
+  box-shadow: 1px 0px 12px 3px rgb(155, 153, 153);
+  background-color: rgb(231, 231, 231);
+  .title {
+    .log_title {
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+  .log {
+    margin-left: 50px;
+  }
+}

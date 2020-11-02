@@ -1,0 +1,14 @@
+.birth {
+  border: 1px solid black;
+  box-shadow: 1px 0px 12px 3px rgb(155, 153, 153);
+  height: 400px;
+  border-radius: 10px;
+  .tab-content {
+    position: absolute;
+    top: 70%;
+    left: 3%;
+    p {
+      width: 90%;
+    }
+  }
+}

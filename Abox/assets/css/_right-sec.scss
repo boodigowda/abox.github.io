@@ -1,0 +1,117 @@
+@mixin arr {
+  background-color: rgba(26, 3, 3, 0.829);
+  height: 30px;
+  &:hover {
+    box-shadow: 1px 0px 12px 3px rgb(155, 153, 153);
+  }
+}
+
+@mixin flipper {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+@mixin panels {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+  padding: 50px;
+  display: none;
+}
+
+.col-md-4 {
+  #flip {
+    @include flipper();
+  }
+  #panel {
+    @include panels();
+    padding: 20px 50px 50px 50px;
+    .advrt {
+      .carousel-control-prev {
+        position: absolute;
+        top: 210px;
+        left: 25%;
+        .carousel-control-prev-icon {
+          @include arr();
+        }
+      }
+      .carousel-control-next {
+        position: absolute;
+        top: 210px;
+        right: 25%;
+        .carousel-control-next-icon {
+          @include arr();
+        }
+      }
+    }
+  }
+  #flip2 {
+    @include flipper();
+  }
+  #panel2 {
+    @include panels();
+    padding: 20px 50px 0px 50px;
+  }
+  #flip3 {
+    @include flipper();
+  }
+  #panel3 {
+    @include panels();
+    padding: 20px 50px 5px 50px;
+    img {
+      width: 150px;
+    }
+    a {
+      text-decoration: none;
+    }
+    .text-danger {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .modal {
+      top: 20%;
+      .modal-dialog {
+        .modal-content {
+          .modal-body {
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  #flip4 {
+    @include flipper();
+  }
+  #panel4 {
+    @include panels();
+    padding: 20px 30px 20px 30px;
+  }
+  #flip5 {
+    @include flipper();
+  }
+  #panel5 {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+    padding: 50px;
+    padding: 20px 30px 20px 30px;
+  }
+  #flip6 {
+    @include flipper();
+  }
+  #panel6 {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+    padding: 50px;
+    padding: 20px 30px 20px 30px;
+    padding: 20px 30px 20px 30px;
+  }
+}
